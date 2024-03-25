@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ballon COmpany</title>
+    <title>Ballon Company</title>
     <link rel="stylesheet" href="./style/about.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -40,48 +40,98 @@
 
 
 
-    <div class="cover">
-        <h1>About Us</h1>
-    </div>
-
-
-    <div class="container">
-        <h2 class="cont-h2">"Crafting Unforgettable Moments"</h2>
-        <!-- <h2 class="cont-h2">"Crafting Unforgettable Moments: Our Commitment to Excellence"</h2> -->
-        <div class="about">
-            <p>
-                At Kolkata Royal Decoration, we understand the importance of every milestone in your life, whether it's your birthday, wedding day, or anniversary. We specialize in creating unforgettable moments through our exquisite event decoration services. With years of experience and a passion for creativity, we bring your vision to life, making your special occasions truly remarkable.
-            </p>
-        </div>
-    </div>
-
-    <div class="services">
-        <h2>Our Services</h2>
-        <ol>
-            <li type="number">
-                <h3>Birthday Bash Bonanza:</h3>
-                <p>
-                     From whimsical themes for children's parties to sophisticated setups for milestone birthdays, we transform ordinary spaces into extraordinary realms of celebration. Our team crafts personalized decorations, including balloons, banners, centerpieces, and more, tailored to suit the personality and preferences of the guest of honor.
-                </p>
-            </li>
-            <li type="number">
-                <h3>Wedding Wonderland:</h3>
-                <p>
-                     Your wedding day deserves nothing short of perfection. We work closely with couples to design enchanting decor that reflects their love story and style. Whether you dream of a romantic garden affair, a glamorous ballroom extravaganza, or a bohemian beach celebration, we curate every detail to evoke the ambiance you desire.
-                </p>
-            </li>
-            <li type="number">
-                <h3>Aniversary Elegance:</h3>
-                <p>
-                     Commemorate years of love and commitment with our bespoke anniversary decorations. Whether it's a cozy at-home gathering or a grand soirée, we infuse every element with sentiment and sophistication. From intimate tablescapes to dazzling backdrops, we create an atmosphere that honors your journey together.
-                </p>
-            </li>
-        </ol>
-    </div>
-
-
-    
    
+
+
+   <div class="product md:flex p-4 mt-16">
+
+
+    <div class="image basis-1/2 p-5">
+        <img src="./images/birthday.webp" alt="">
+    </div>
+
+    <div class="conent basis-1/2 p-5">
+
+        <div class="title text-3xl" >Product Title</div>
+        <hr>
+        <div class="price bold text-2xl p-4">$ 500 </div>
+        <hr>
+        <div class="options p-3">
+            <button
+            class="px-5 py-3 text-white duration-150 bg-indigo-600 rounded-md hover:bg-indigo-500 active:bg-indigo-700"
+        >
+            Buy Now
+        </button>
+<button
+    class="px-5 py-3 text-white duration-150 bg-green-600 rounded-md hover:bg-green-500 active:bg-indigo-700"
+>
+    WhatsApp
+</button>
+        </div>
+        <div class="desc p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores unde nisi, repellendus ullam, ipsam, aspernatur dolorem vitae recusandae voluptas repudiandae in optio porro voluptatum cupiditate voluptate. Non quis perspiciatis a?
+
+        </div>
+   
+    </div>
+
+
+   </div>
+
+
+   <div class="p-5">
+     
+    <div class="text-2xl">Product Specification</div>
+    <ul class="md:flex">
+        <li class="basis-1/4 p-2    ">
+            <div class="card p-3 rounded-xl shadow-2xl">
+                <div class="title p-3 text-xl">Feature 1</div>
+                <hr>
+                <div class="desc p-3 text-sm"> Description of the first feature</div>
+            </div>
+        </li>
+        <li class="basis-1/4 p-2">
+            <div class="card p-3 rounded-xl shadow-2xl">
+                <div class="title p-3 text-xl">Feature 1</div>
+                <hr>
+                <div class="desc p-3 text-sm"> Description of the first feature</div>
+            </div>
+        </li>
+        <li class="basis-1/4 p-2">
+            <div class="card p-3 rounded-xl shadow-2xl">
+                <div class="title p-3 text-xl">Feature 1</div>
+                <hr>
+                <div class="desc p-3 text-sm"> Description of the first feature</div>
+            </div>
+        </li>
+        <li class="basis-1/4 p-2" >
+            <div class="card p-3 rounded-xl shadow-2xl">
+                <div class="title p-3 text-xl">Feature 1</div>
+                <hr>
+                <div class="desc p-3 text-sm"> Description of the first feature</div>
+            </div>
+        </li>
+
+    </ul>
+
+   </div>
+
+  <div class="md:flex p-5 ">
+
+    <div>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse deserunt corrupti aperiam animi unde praesentium doloremque eius iure excepturi, modi magni corporis, repudiandae iste sit ducimus alias voluptates. Veritatis corrupti ullam repudiandae minus explicabo? Sint natus cupiditate recusandae, dolore placeat error similique quis ea asperiores expedita quaerat dolorum iste eligendi culpa iusto neque tempore nulla, suscipit repellendus totam odio? Praesentium veniam nemo necessitatibus, voluptatum aut iste dolorem a laboriosam expedita. Earum dolore labore odio nemo et perspiciatis sequi, facere, placeat animi nobis itaque hic soluta dignissimos corporis nam consequatur ex minima? Reprehenderit incidunt provident consectetur placeat facilis, voluptatibus ex dolorum?
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
 
   <div x-data="footerComponent()">
     <footer
@@ -226,11 +276,10 @@
   
 
 
-
     <script>
         function showSidebar(){
             const sidebar = document.querySelector('.sidebars')
-            sidebar.style.display = 'flex'
+            sidebar.style.display = 'md:flex'
         }
 
         function hideSidebar(){
