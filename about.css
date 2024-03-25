@@ -4,9 +4,11 @@
 }
 body{
     min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Work Sans','Montserrat';
 }
 nav{
+    position: sticky;
+    top: 0;
     background-color: #fff;
     box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
@@ -55,7 +57,7 @@ nav li:first-child{
 }
 
 .logo{
-    margin-left: 9%;
+    margin-left: 3%;
 }
 .logo img{
     height: 40px;
@@ -68,10 +70,31 @@ nav li:first-child{
     .menubar{
         display: block;
     }
+    .menubar svg {
+        fill: white;
+    }
+    nav{
+        position: absolute;
+        background-color: transparent;
+        width: 100%;
+    }
+    .logo {
+        color: white;
+    }
+    .titleheader {
+        color : white;
+    }
 }
 @media(max-width: 400px){
     .sidebars{
         width: 100%;
+    }
+
+    .logo {
+        color: white;
+    }
+    nav a {
+        color : white;
     }
 }
 /* Nav End  */
@@ -79,7 +102,7 @@ nav li:first-child{
 
 
 .cover{
-    background-image: url(/concert-2527495_1280.jpg);
+    background-image: url(./birthday.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 40vh;
@@ -100,7 +123,12 @@ nav li:first-child{
 }
 .container h2{
     margin: 2% auto;
-    color: rgb(36, 36, 36);
+    color: rgb(255, 166, 0);
+}
+.about p{
+    line-height: 180%;
+    margin: 2% 2%;
+    padding: 1% 5%;
 }
 .services{
     width: 90%;
@@ -110,21 +138,36 @@ nav li:first-child{
 }
 .services h2{
     margin: 1% auto;
-    color: rgb(20, 20, 20);
+    color: rgb(255, 166, 0);
+    font-size: xx-large;
 }
 .services ol{
-    text-align: left;
-    padding: 1% 2%;
+    text-align: center;
+    padding: 1% 5%;
+    list-style: none;
 }
 .services ol li{
-    margin: 1% 2%;
+    margin: 4% 2%;
+    line-height: 180%;
+    /* padding: 1% 5%; */
+}
+.services ol li h3{
+    text-align: center;
+    margin: 5vh 2%;
+}
+.services ul li h3{
+    text-align: center;
+    margin: 5vh 2%;
 }
 .services ul{
-    text-align: left;
-    padding: 1% 2%;
+    text-align: center;
+    padding: 1% 5%;
+    list-style: none;
 }
 .services ul li{
-    margin: 1% 2%;
+    margin: 3% 2%;
+    line-height: 180%;
+    padding: 1% 5%;
 }
 
 @media (max-width: 400px) {
@@ -143,4 +186,27 @@ nav li:first-child{
     .services ul{
         margin: 3%;
     }
+    .foot {
+        padding: 5%;
+    }
+    .container p{
+        text-align: left;
+    }
+    .services ol li p{
+        text-align: left;
+    }
+    .services ul li p{
+        text-align: left;
+    }
+}
+
+.foot{
+    background-color: rgb(45, 44, 44);
+    text-align: center;
+    position: relative;
+    top: 12vh;
+}
+.foot p{
+    color: #fff;
+    padding: 2%;
 }
