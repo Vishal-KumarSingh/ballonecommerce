@@ -101,7 +101,7 @@ nav li:first-child{
 
 
 .banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./pexels-vidal-balielo-jr-1682509.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-vidal-balielo-jr-1682509.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
