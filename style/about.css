@@ -71,7 +71,7 @@ nav li:first-child{
         display: block;
     }
     .menubar svg {
-        fill: white;
+        /* fill: white; */
     }
     nav{
         position: absolute;
