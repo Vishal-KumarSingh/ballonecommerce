@@ -57,7 +57,7 @@ nav li:first-child{
 }
 
 .logo{
-    margin-left: 3%;
+    /* margin-left: 3%; */
 }
 .logo img{
     height: 40px;
@@ -92,9 +92,6 @@ nav li:first-child{
 
     .logo {
         color: white;
-    }
-    nav a {
-        color : white;
     }
 }
 /* Nav End  */
