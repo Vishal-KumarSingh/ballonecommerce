@@ -99,10 +99,10 @@ nav li:first-child{
 
 
 .cover{
-    background-image: url(../images//birthday.webp);
+    background-image: url('../images/IMG-20240304-WA0008(1).jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 40vh;
+    height: 60vh;
     color: #fff;
     text-align: center;
 }
